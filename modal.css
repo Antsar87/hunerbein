@@ -2,7 +2,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 30px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -12,15 +12,23 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+@media (min-width: 700px){
+  .modal {
+    padding-top: 50px;
+  }
+}
+
 /* Modal Content */
 .modal-content {
+  border-radius: 10px;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .modal__close {

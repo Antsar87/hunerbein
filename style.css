@@ -6,7 +6,8 @@
 }
 
 .header {
-  background: linear-gradient(#382b2bce, #382b2bce), url(./img/Background.jpg) center bottom / cover;
+  background: linear-gradient(#382b2bce, #382b2bce),
+    url(./img/Background.jpg) center bottom / cover;
   height: 95vh;
   display: flex;
   justify-content: center;
@@ -14,33 +15,68 @@
 
 .header__box {
   height: 100%;
-  width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
-.header__logo {
-  height: 300px;
+@media (min-width: 375px) {
+  .header__box {
+    width: 600px;
+  }
 }
 
-@media {min-width: 768px;}{
-  
+.header__logo {
+  height: 200px;
+  width: 250px;
+}
+
+@media (min-width: 395px) {
+  .header__logo {
+    height: 300px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 540px) {
+  .header__logo {
+    height: 300px;
+    width: 500px;
+  }
 }
 
 .header__text {
   color: white;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 500;
+}
+
+@media (min-width: 425px) {
+  .header__text {
+    font-size: 45px;
+  }
+}
+
+.box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header__mail {
   color: white;
-  font-size: 25px;
+  font-size: 19px;
   padding-bottom: 10px;
   text-decoration: none;
+}
+
+@media (min-width: 425px) {
+  .header__mail {
+    font-size: 25px;
+  }
 }
 
 .footer {
