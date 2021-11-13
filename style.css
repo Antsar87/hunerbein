@@ -1,0 +1,50 @@
+*,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: linear-gradient(#382b2bce, #382b2bce), url(./img/Background.jpg) center bottom / cover;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+}
+
+.header__box {
+  height: 100%;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.header__logo {
+  height: 300px;
+}
+
+.header__text {
+  color: white;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.header__mail {
+  color: white;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  background: rgb(30, 68, 99);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer__text {
+  text-transform: capitalize;
+}
