@@ -26,6 +26,10 @@
   height: 300px;
 }
 
+@media {min-width: 768px;}{
+  
+}
+
 .header__text {
   color: white;
   font-size: 45px;
@@ -43,9 +47,14 @@
   background: rgb(30, 68, 99);
   color: white;
   text-align: center;
-  padding: 20px 0;
+  height: 5vh;
+  display: flex;
+  align-items: cneter;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer__text {
   text-transform: capitalize;
+  cursor: pointer;
 }
